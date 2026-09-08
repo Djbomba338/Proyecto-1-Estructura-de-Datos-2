@@ -16,4 +16,4 @@
   complejidad pide ..., así que ...
 
 ## 2026-09-07 — En conjunto
-- Leimos la letra del obligatorio y analizamos como distribuir el trabajo, leimos las pautas e investigamos el template.
+- Leimos la letra del obligatorio y analizamos como distribuir el trabajo, leimos las pautas e investigamos el template. Ademas se realizo un avance del implemento del Tad de AVL y Hash
