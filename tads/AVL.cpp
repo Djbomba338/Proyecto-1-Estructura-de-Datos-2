@@ -1,5 +1,5 @@
-#ifndef AVL_H
-#define AVL_H
+#ifndef AVL_IMP
+#define AVL_IMP
 
 #include "AVL.h"
 #include <cassert>
@@ -16,8 +16,9 @@ class AVLImp : public AVL<T> {
             Nodo *izq;
             Nodo *der;
             Nodo(T x) :dato(x), altura(1), izq(NULL) , der(NULL) {}
-        }
+        };
         Nodo * raiz;
+
         int calcBalance (Nodo * t){
             int alturaIzq = t->izq ? t->izq->altura : 0;
             int alturaDer = t->der ? t->der->altura : 0;
@@ -29,7 +30,7 @@ class AVLImp : public AVL<T> {
             t->altura = max(alturaDer,alturaIzq)+1;
         }
         Nodo * rotacionIzq(Nodo * a, Nodo * b){
-            a->der = b->der;
+            a->der = b->izq; //Posible cambio 
             b->izq = a;
             ActualizarAltura(a);
             ActualizarAltura(b);
@@ -76,6 +77,38 @@ class AVLImp : public AVL<T> {
 
             return t;
         }
+
+        bool buscar(Nodo * t, T x){
+            if(t == NULL){
+                return false;
+            }
+            if(t->dato> x){
+                return buscar(t->izq,x);
+            } else if(t->dato<x){
+                return buscar(t->der,x);
+            } else {
+                return true;
+            }
+        }
+
+        void buscarEntre(Nodo * t, T x1, T x2){
+            if(t == NULL){
+                return 
+            }
+            if(t->dato>= x1 && t->dato<=x2){
+                buscarEntre(t->izq, x1, x2);
+                buscarEntre(t->der,x1,x2);
+                cout>> t->dato;
+            }
+            if(t->dato<x1){
+                buscarEntre(t->der,x1,x2);
+            }
+            if(t->dato>x2){
+                buscarEntre(t->izq,x1,x2);
+            }
+        }
+
+
    
     public:
         AVL(): raiz(NULL) {}
@@ -87,6 +120,16 @@ class AVLImp : public AVL<T> {
         }
         void insertar(T x){
             raiz = insertar(raiz,x);
+        }
+
+        AVL<T>* crearAVL() {
+            return new AVLImp<T>();
+        }
+        bool buscar(T x) {
+            return buscar(raiz, x);
+        }
+        void buscarEntre(T x1, T x2){
+            buscarEntre(raiz,x1,x2);
         }
 };
 
