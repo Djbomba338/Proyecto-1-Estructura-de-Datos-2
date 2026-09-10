@@ -3,13 +3,16 @@
 
 #include "List.h"
 #include "listImp.cpp"
+#include "Hash.h"
 
 template <class T>
-class ListImp : public List<T>
+class HashImp : public Hash<T>
 {
 private:
-    List<T> elems;
+    ListImp<T>** elementos;
     int cota;
+
+    
 
 public:
 
