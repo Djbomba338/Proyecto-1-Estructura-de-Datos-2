@@ -72,7 +72,7 @@ class AVLImp : public AVL<T> {
             }
             //II
             if (balance < -1 && t->izq->dato > x){
-                return rotacionDer(t, t->der);
+                return rotacionDer(t, t->izq);
             }
 
             return t;
@@ -93,44 +93,41 @@ class AVLImp : public AVL<T> {
 
         void buscarEntre(Nodo * t, T x1, T x2){
             if(t == NULL){
-                return 
+                return;
             }
             if(t->dato>= x1 && t->dato<=x2){
-                buscarEntre(t->izq, x1, x2);
-                buscarEntre(t->der,x1,x2);
-                cout>> t->dato;
+                cout>> t->dato << endl;
             }
-            if(t->dato<x1){
-                buscarEntre(t->der,x1,x2);
-            }
-            if(t->dato>x2){
+            if(t->dato>x1){
                 buscarEntre(t->izq,x1,x2);
+            }
+            if(t->dato<x2){
+                buscarEntre(t->der,x1,x2);
             }
         }
 
 
    
     public:
-        AVL(): raiz(NULL) {}
-        ~AVL() { //Estos son los destructores
-             
-        }
-        AVLimp(){
-            raiz = NULL;
-        }
+        AVLImp(): raiz(NULL) {}
+        ~AVLImp() {}
+
         void insertar(T x){
             raiz = insertar(raiz,x);
         }
 
-        AVL<T>* crearAVL() {
-            return new AVLImp<T>();
-        }
         bool buscar(T x) {
             return buscar(raiz, x);
         }
         void buscarEntre(T x1, T x2){
             buscarEntre(raiz,x1,x2);
         }
+
 };
+
+template <class T>
+AVL<T>* crearAVL(){
+    return new AVLImp<T>();
+}
 
 #endif

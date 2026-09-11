@@ -12,51 +12,51 @@ int main()
     int n1;
     cin>> n1;
 
-    AVL<int>*m = crearAVL<int>();
+    AVL<long long>*m = crearAVL<long long>();
     AVL<string>*p = crearAVL<string>();
 
     
     for(int i = 0; i<n1; i++){
         cout<<"Ingrese los valores que quiera ingresar";
-        string ingresado;
-        int contador=0;
         string orden;
         string tipo;
-        int contEsp=0;
         string c1;
         string c2;
 
-        cin>> orden>> tipo >> c1 >> c2;
+
+        cin>> orden>> tipo >> c1;
+
+        if( orden == "RANGO"){
+            cin>>c2;
+        }
 
 
         if(orden== "ALTA"){
-            if(tipo=="m"){
-                int aNum = stoi(c1);
+            if(tipo=="M"){
+                long long aNum = stoll(c1);
                 m->insertar(aNum);
             } else {
                 p->insertar(c1);
             }  
         } else if(orden == "BUSCAR"){
-            if(tipo == "m"){
-                int aNum = stoi(c1);
-                bool esta = m->buscar(aNum);
-                if(esta){
-                    cout<<"Si";
+            if(tipo == "M"){
+                long long aNum = stoll(c1);
+                if(m->buscar(aNum)){
+                    cout<<"Si"<< endl;
                 } else {
-                    cout<< "No";
+                    cout<< "No"<< endl;
                 }
             } else{
-                bool esta = p->buscar(c1);
-                if(esta){
-                    cout<<"Si";
+                if(p->buscar(c1)){
+                    cout<<"Si"<< endl;
                 } else {
-                    cout<< "No";
+                    cout<< "No"<< endl;
                 }
             }
         } else {
-            if(tipo == "m"){
-                int aNum = stoi(c1);
-                int aNum2 = stoi(c2);
+            if(tipo == "M"){
+                long long aNum = stoll(c1);
+                long long aNum2 = stoll(c2);
                 m->buscarEntre(aNum,aNum2);
             } else{
                 p->buscarEntre(c1,c2);
