@@ -19,7 +19,6 @@ int main()
     for(int i = 0; i<n1; i++){
         cout<<"Ingrese los valores que quiera ingresar";
         string ingresado;
-        cin>> ingresado;
         int contador=0;
         string orden;
         string tipo;
@@ -27,36 +26,8 @@ int main()
         string c1;
         string c2;
 
+        cin>> orden>> tipo >> c1 >> c2;
 
-        for(int j =0; j<ingresado.length();j++){
-            char aux = ingresado[j]; 
-            if(aux == ' '){
-                contEsp++;
-            }
-            if(aux == ' ' && contEsp==0){
-                if(contador == 4){
-                    orden = "ALTA";
-                } {
-                    if(contador == 5){
-                        orden ="RANGO";
-                    } else{
-                        orden = "BUSCAR";
-                    }
-                }
-            }
-
-            if(aux != ' ' && contEsp==1){
-                tipo = aux;
-            }
-
-            if(contEsp == 2 && aux != ' '){
-                c1 += aux;
-            }
-            if(contEsp == 3 && aux != ' '){
-                c2 += aux;
-            }
-        
-        }
 
         if(orden== "ALTA"){
             if(tipo=="m"){
