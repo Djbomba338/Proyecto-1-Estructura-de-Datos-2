@@ -2,13 +2,13 @@
 #include <string>
 #include <iostream>
 #include <limits>
-#include <AVL.h>
-#include <AVL.cpp>
+#include "tads/AVL.h"
+#include "tads/AVL.cpp"
 using namespace std;
 
 int main()
 {
-    cout<<"Ingresar la cantidad de operaciones a realizar"<<endl; 
+
     int n1;
     cin>> n1;
 
@@ -17,7 +17,7 @@ int main()
 
     
     for(int i = 0; i<n1; i++){
-        cout<<"Ingrese los valores que quiera ingresar";
+
         string orden;
         string tipo;
         string c1;
@@ -42,15 +42,15 @@ int main()
             if(tipo == "M"){
                 long long aNum = stoll(c1);
                 if(m->buscar(aNum)){
-                    cout<<"Si"<< endl;
+                    cout<<"si"<< endl;
                 } else {
-                    cout<< "No"<< endl;
+                    cout<< "no"<< endl;
                 }
             } else{
                 if(p->buscar(c1)){
-                    cout<<"Si"<< endl;
+                    cout<<"si"<< endl;
                 } else {
-                    cout<< "No"<< endl;
+                    cout<< "no"<< endl;
                 }
             }
         } else {

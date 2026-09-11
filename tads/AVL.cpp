@@ -95,12 +95,13 @@ class AVLImp : public AVL<T> {
             if(t == NULL){
                 return;
             }
-            if(t->dato>= x1 && t->dato<=x2){
-                cout>> t->dato << endl;
-            }
             if(t->dato>x1){
                 buscarEntre(t->izq,x1,x2);
             }
+            if(t->dato>= x1 && t->dato<=x2){
+                cout<< t->dato << endl;
+            }
+
             if(t->dato<x2){
                 buscarEntre(t->der,x1,x2);
             }
