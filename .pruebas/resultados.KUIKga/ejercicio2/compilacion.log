@@ -1,0 +1,5 @@
+In file included from ejercicio2.cpp:5:0:
+tads/HASHAbierto.cpp: In member function 'TablaHash* TablaHash::crear(int)':
+tads/HASHAbierto.cpp:58:43: warning: division by zero [-Wdiv-by-zero]
+         ret->capacidad = cantElementosMax / 0,6;
+                          ~~~~~~~~~~~~~~~~~^~~

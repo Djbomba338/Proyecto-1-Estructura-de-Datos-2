@@ -1,0 +1,8 @@
+In file included from ejercicio2.cpp:5:0:
+tads/HASHAbierto.cpp: In member function 'void TablaHash::agregar(std::__cxx11::string, TablaHash*)':
+tads/HASHAbierto.cpp:73:16: error: redeclaration of 'Nodo* nuevo'
+         Nodo * nuevo = new Nodo;
+                ^~~~~
+tads/HASHAbierto.cpp:72:16: note: 'Nodo* nuevo' previously declared here
+         Nodo * nuevo = new Nodo;
+                ^~~~~

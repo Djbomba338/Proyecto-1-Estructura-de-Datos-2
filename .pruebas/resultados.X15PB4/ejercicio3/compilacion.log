@@ -1,0 +1,24 @@
+In file included from ejercicio3.cpp:5:0:
+tads/HeapIMP.cpp:70:19: error: stray '\303' in program
+     long long tamaño() {
+                   ^
+tads/HeapIMP.cpp:70:20: error: stray '\261' in program
+     long long tamaño() {
+                    ^
+ejercicio3.cpp:23:20: error: stray '\303' in program
+     while(heap.tamaño()>1){
+                    ^
+ejercicio3.cpp:23:21: error: stray '\261' in program
+     while(heap.tamaño()>1){
+                     ^
+In file included from ejercicio3.cpp:5:0:
+tads/HeapIMP.cpp:70:15: error: expected ';' at end of member declaration
+     long long tamaño() {
+               ^~~~
+ejercicio3.cpp: In function 'int main()':
+ejercicio3.cpp:23:22: error: expected ')' before 'o'
+     while(heap.tamaño()>1){
+                      ^
+ejercicio3.cpp:23:24: error: 'o' was not declared in this scope
+     while(heap.tamaño()>1){
+                        ^

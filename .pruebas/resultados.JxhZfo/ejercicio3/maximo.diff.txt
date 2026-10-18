@@ -1,0 +1,4 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.JxhZfo/ejercicio3/esperado.normalizado.txt	2026-10-18 00:52:36.651497000 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.JxhZfo/ejercicio3/obtenido.normalizado.txt	2026-10-18 00:52:36.664089200 -0300
+@@ -1 +0,0 @@
+-20689416323316

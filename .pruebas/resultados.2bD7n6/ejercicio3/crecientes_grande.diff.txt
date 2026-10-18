@@ -1,0 +1,6 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.2bD7n6/ejercicio3/esperado.normalizado.txt	2026-10-18 02:16:40.284627700 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.2bD7n6/ejercicio3/obtenido.normalizado.txt	2026-10-18 02:16:40.315238700 -0300
+@@ -1 +1 @@
+-817825026400
++817825026400
+\ No newline at end of file

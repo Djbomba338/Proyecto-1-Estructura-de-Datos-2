@@ -1,0 +1,6 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.8v4AVS/ejercicio2/esperado.normalizado.txt	2026-10-18 01:03:15.148126800 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.8v4AVS/ejercicio2/obtenido.normalizado.txt	2026-10-18 01:03:15.176035000 -0300
+@@ -1,2 +1,2 @@
+ 1
+-1 1
++11

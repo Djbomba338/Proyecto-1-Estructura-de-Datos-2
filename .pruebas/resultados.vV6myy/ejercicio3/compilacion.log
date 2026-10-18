@@ -1,0 +1,8 @@
+In file included from ejercicio3.cpp:4:0:
+C:/Program Files/Haskell Platform/8.6.5/mingw/include/c++/7.2.0/limits:1599:7: internal compiler error: Segmentation fault
+       min() _GLIBCXX_USE_NOEXCEPT { return __FLT_MIN__; }
+       ^~~
+libbacktrace could not find executable to open
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <https://sourceforge.net/projects/msys2> for instructions.
