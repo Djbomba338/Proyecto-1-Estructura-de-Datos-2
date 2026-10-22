@@ -10,6 +10,14 @@
 > respuesta. Una bitácora escrita íntegramente el día de la entrega implica pérdida de puntos.
 
 
+## 2026-09-07 — En conjunto
+- Leimos la letra del obligatorio y analizamos como distribuir el trabajo, leimos las pautas e investigamos el template. Ademas se realizo un avance del implemento del Tad de AVL y Hash
+
+## 2026-09-08 — En conjunto
+- Empezamos a realizar el ejercicio 1, tuvimos problemas con la implementacion del cin ya que pensamos que entraba todo el texto y entra por palabras segun espacios, en principio hablamos con los profesores por teams para poder utilizar bibliotecas extras como el sstream, pero al final resolvimos de otra manera ya que nos explicaron que el cin funcionaba distinto.
+
+## 2026-09-11 — Franco 
+- Continue con el ejercicio 1, termine de solucionar los conflictos por ejemplo poner el endl para que genere el salto de linea y solucione detalles menores de implementaciones, utilice chat gpt para que me cree un codigo en bash para poder correr las pruebas por ejercicio.
 
 ## 2026-10-18 — En conjunto 
 - Realizamos el ejercicio 3 en conjunto, este ejercicio nos parecio bastante facil, desde un principio ya teniamos pensado como resolverlo, lo que hicimos fue ingresar cada uno de los archivos en un heap y fuimos extrayendo los 2 elementos mas chicos, los sumamos, sumamos el resultado al costo total y reingresamos la suma al heap. En este ejercicio utilizamos la implemetacion de heap vista en clase y publicada en teams por el profesor, el unico problema que surgio fue que habiamos inicializado todos los valores como int en lugar de un long long y nos daba error entonces tuvimos que cambiarlo.
@@ -32,14 +40,9 @@ Luego de realizar todas esas correcciones el ejercicio nos seguia dando mal ento
 
 
 
-## 2026-09-07 — En conjunto
-- Leimos la letra del obligatorio y analizamos como distribuir el trabajo, leimos las pautas e investigamos el template. Ademas se realizo un avance del implemento del Tad de AVL y Hash
 
-## 2026-09-08 — En conjunto
-- Empezamos a realizar el ejercicio 1, tuvimos problemas con la implementacion del cin ya que pensamos que entraba todo el texto y entra por palabras segun espacios.
 
-## 2026-09-11 — Franco 
-- Continue con el ejercicio 1, termine de solucionar los conflictos y solucione detalles menores de implementaciones, corrieron todas las pruebas.
+
 
 
 
