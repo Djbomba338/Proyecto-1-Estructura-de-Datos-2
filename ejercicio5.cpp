@@ -69,5 +69,10 @@ int main()
     }else{
         cout << retorno << endl;
     }
+
+
+    delete [] ret;
     return 0;
+
+
 }
