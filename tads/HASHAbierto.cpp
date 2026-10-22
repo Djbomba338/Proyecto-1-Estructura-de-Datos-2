@@ -63,7 +63,6 @@ public:
 
         int pos = funcionHash(clave);
         Nodo * actual = tabla->tabla[pos];
-        Nodo * nuevo = new Nodo;
         while(actual != NULL && !mismaClave(actual->clave, clave)){
             actual = actual->sig;
         }

@@ -4,17 +4,17 @@
 class MFSet {
     private:
     int * padre;
-    int * elementos; 
+    int * altura; 
     int largo;
 
     public:
     MFSet(int n) {
         this->largo = n;
         this->padre = new int[this->largo];
-        this->elementos = new int[this->largo];
+        this->altura = new int[this->largo];
         for (int i = 0; i < this->largo; i ++) {
             this->padre[i] = i;
-            this->elementos[i] = 1;
+            this->altura[i] = 0;
         }
     }
     int representante(int a) {
@@ -30,12 +30,13 @@ class MFSet {
         if (repA == repB){
             return false;
         }
-        if (this->elementos[repA] > this->elementos[repB]) { 
+        if (this->altura[repA] > this->altura[repB]) { 
             this->padre[repB] = repA;
-            this->elementos[repA] += this->elementos[repB];
-        } else {
+        } else if(this->altura[repA] < this->altura[repB]) {
             this->padre[repA] = repB;
-            this->elementos[repB] += this->elementos[repA];
+        } else{
+            this->padre[repA] = repB;
+            this->altura[repB]++;
         }
         return true;
     }
