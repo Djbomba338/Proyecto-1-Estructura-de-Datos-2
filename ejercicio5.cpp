@@ -33,6 +33,15 @@ int main()
     int e = 0;
 
     cin>> v >> e;
+   
+    if(e < v-1){
+        cout <<"imposible" << endl;
+    }
+
+    if(v == 1){
+        cout<< 0 << endl;
+        return 0;
+    }
 
     MinHeap<nodo>* ret = new MinHeap<nodo>(e); 
 
@@ -46,11 +55,6 @@ int main()
         aux.destino = d;
         aux.peso = p;
         ret->insertar(aux);
-    }
-
-    if(v == 1){
-        cout<< 0 << endl;
-        return 0;
     }
 
     long long retorno = 0;
