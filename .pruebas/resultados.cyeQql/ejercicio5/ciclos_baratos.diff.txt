@@ -1,0 +1,6 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.cyeQql/ejercicio5/esperado.normalizado.txt	2026-10-22 12:21:14.022327600 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.cyeQql/ejercicio5/obtenido.normalizado.txt	2026-10-22 12:21:14.059005100 -0300
+@@ -1 +1 @@
+-999663972
++999663972
+\ No newline at end of file

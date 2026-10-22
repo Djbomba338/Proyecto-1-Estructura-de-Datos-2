@@ -1,0 +1,6 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.Lovqko/ejercicio5/esperado.normalizado.txt	2026-10-22 12:18:21.963827500 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.Lovqko/ejercicio5/obtenido.normalizado.txt	2026-10-22 12:18:22.007492000 -0300
+@@ -1 +1 @@
+-16
++16
+\ No newline at end of file
