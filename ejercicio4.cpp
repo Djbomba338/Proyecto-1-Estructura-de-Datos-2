@@ -52,9 +52,6 @@ int main(){
 
     }
 
-
-
-  
     MinHeap<nodo>* ret = new MinHeap<nodo>(cantModulos+1);
     for (int i = 1; i < cantModulos+1; i ++) {
         if (grado[i] == 0) {
@@ -85,6 +82,9 @@ int main(){
             cout << orden[i] << '\n';
         }
     }
+
+    delete [] aux25;
+    delete [] aux;
     delete [] orden;
     delete [] grado;
     delete ret;
