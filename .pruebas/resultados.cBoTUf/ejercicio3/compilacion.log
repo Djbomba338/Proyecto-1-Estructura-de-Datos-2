@@ -1,0 +1,10 @@
+ejercicio3.cpp: In function 'int main()':
+ejercicio3.cpp:14:12: error: missing template arguments before '*' token
+     MinHeap* ret = new MinHeap(n);
+            ^
+ejercicio3.cpp:14:14: error: 'ret' was not declared in this scope
+     MinHeap* ret = new MinHeap(n);
+              ^~~
+ejercicio3.cpp:14:24: error: expected type-specifier before 'MinHeap'
+     MinHeap* ret = new MinHeap(n);
+                        ^~~~~~~

@@ -11,7 +11,7 @@ int main(){
     int n =0 ;
     cin>> n;
 
-    MinHeap* ret = new MinHeap(n);
+    MinHeap<long long>* ret = new MinHeap<long long>(n);
     
     for(int i = 0 ; i<n ; i++){
         long long t;
@@ -30,4 +30,5 @@ int main(){
     }
 
     cout<< costo <<endl;
+    delete ret;
 }

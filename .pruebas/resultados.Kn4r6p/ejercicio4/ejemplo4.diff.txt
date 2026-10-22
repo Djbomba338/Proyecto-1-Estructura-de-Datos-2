@@ -1,0 +1,5 @@
+--- /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.Kn4r6p/ejercicio4/esperado.normalizado.txt	2026-10-22 02:03:24.530875500 -0300
++++ /c/Users/franc/Proyecto-1-Estructura-de-Datos-2/.pruebas/resultados.Kn4r6p/ejercicio4/obtenido.normalizado.txt	2026-10-22 02:03:24.555887300 -0300
+@@ -1 +1 @@
+-imposible
++

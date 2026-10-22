@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
 
+template <class T>
 class MinHeap {
 private:
-    long long* datos;
+    T* datos;
     long long cantidad;
     long long capacidad;
 
@@ -20,7 +21,7 @@ private:
     }
 
     void intercambiar(long long pos1, long long pos2) {
-        long long aux = datos[pos1];
+        T aux = datos[pos1];
         datos[pos1] = datos[pos2];
         datos[pos2] = aux;
     }
@@ -56,7 +57,7 @@ public:
     MinHeap(long long capacidad) {
         this->capacidad = capacidad;
         this->cantidad = 0;
-        this->datos = new long long[capacidad];
+        this->datos = new T[capacidad];
     }
 
     ~MinHeap() {
@@ -71,7 +72,7 @@ public:
         return cantidad;
     }
 
-    void insertar(long long valor) {
+    void insertar(T valor) {
         if (cantidad == capacidad) {
             return;
         }
@@ -81,22 +82,22 @@ public:
         cantidad++;
     }
 
-    long long obtenerMinimo() {
+    T obtenerMinimo() {
         if (esVacio()) {
             cout << "Error: el heap esta vacio" << endl;
-            return -1;
+            return T{};
         }
 
         return datos[0];
     }
 
-    long long eliminarMinimo() {
+    T eliminarMinimo() {
         if (esVacio()) {
             cout << "Error: el heap esta vacio" << endl;
-            return -1;
+            return T{};
         }
 
-        long long minimo = datos[0];
+        T minimo = datos[0];
 
         datos[0] = datos[cantidad - 1];
         cantidad--;
