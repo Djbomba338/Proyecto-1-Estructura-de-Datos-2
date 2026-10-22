@@ -36,6 +36,7 @@ int main()
    
     if(e < v-1){
         cout <<"imposible" << endl;
+        return 0;
     }
 
     if(v == 1){
