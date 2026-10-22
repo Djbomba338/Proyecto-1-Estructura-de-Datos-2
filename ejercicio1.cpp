@@ -65,7 +65,7 @@ int main()
 
         
     }
-    delete [] m;
-    delete [] p;
+    delete m;
+    delete p;
 
 }

@@ -71,7 +71,7 @@ int main()
     }
 
 
-    delete [] ret;
+    delete ret;
     return 0;
 
 
